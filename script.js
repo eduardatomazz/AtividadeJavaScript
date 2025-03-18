@@ -28,10 +28,10 @@ while(count >= 1){
 }
 
 //atividade 4
-function interverTexto("Casa"){
-    return "Casa";
+function inverterTexto(){
+    reverse("casa")
 }
-interverTexto("Casa");
+inverterTexto()
 
-
+//atvidade 5
 
