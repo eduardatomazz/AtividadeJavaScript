@@ -30,7 +30,7 @@ while(count >= 1){
 //atividade 4
 let palavranormal = "casa"
 function inverterTexto(){
-    let palavraInvertida = palavraNormal.split("").reverse().join("")
+    let palavraInvertida = palavranormal.split("").reverse().join("")
 }
 inverterTexto()
 
