@@ -1,3 +1,4 @@
+
 //atividade 1
 let numero = 1
 function calculo(numero){
@@ -28,11 +29,69 @@ while(count >= 1){
 }
 
 //atividade 4
-let palavranormal = "casa"
-function inverterTexto(){
-    let palavraInvertida = palavranormal.split("").reverse().join("")
+let texto = prompt("Digite uma palavra:");
+function inverterTexto(texto){
+    console.log(texto.split("").reverse().join(""));
 }
-inverterTexto()
+inverterTexto(texto)
 
 //atvidade 5
+let palavra = prompt("Digite uma palavra:");
+function contarCaracteres(palavra){
+    console.log(palavra.split(''));
+    for (i=0;i<palavra.length;i++);
+}
+contarCaracteres(palavra)
 
+//atividade 6
+let carro = {
+    marca : prompt("Digite a marca:"),
+    modelo : prompt("Digite o modelo:"),
+    ano : prompt("Digite o ano:"),
+    cr: function() {
+        console.log(this.modelo);
+    }
+};
+carro.cr();
+
+//atividade 7
+let msg = {
+    nome: prompt("Digite seu nome:"),
+    mensagem : "Olá",
+    mensagemPersonalizada: function(){
+        console.log(this.mensagem + " " + this.nome);
+    }
+};
+msg.mensagemPersonalizada()
+
+//atividade 8
+let n1 = prompt("Digite o primeiro número:") *1;
+let n2 = prompt("Digite o segundo número:") *1;
+let n3 = prompt("Digite o terceiro número:") *1;
+function media(n1, n2, n3){
+    console.log((n1 + n2 + n3) / 3)
+}
+media(n1, n2, n3)
+
+//atividade 9
+let multiplo = 1;
+ while(multiplo <= 20){ 
+    if (multiplo % 3 === 0){ 
+     console.log(multiplo + " é " + "múltiplo de 3"); 
+    } else { 
+        console.log(multiplo + " é " + "um não múltiplo de 3"); 
+    } 
+    multiplo++;
+ }
+
+
+//atividade 10
+let palindromo = prompt("Digite uma palavra:")
+function verificarPalindromo(palindromo){
+    if (palindromo === palindromo.split("").reverse().join("")){
+        console.log("true");
+    } else { 
+        console.log("false");
+    }
+}
+verificarPalindromo(palindromo)
