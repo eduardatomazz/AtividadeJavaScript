@@ -1,4 +1,4 @@
-
+/*
 //atividade 1
 let numero = 1
 function calculo(numero){
@@ -95,3 +95,30 @@ function verificarPalindromo(palindromo){
     }
 }
 verificarPalindromo(palindromo)
+
+//atividade 11
+let nnumero = prompt("Digite um número:")
+function verificarSinal(nnumero){
+    if (nnumero === 0){
+        console.log("Zero");
+    }if (nnumero > 0){
+        console.log("Positivo");
+    } else {
+        console.log("Negativo");
+    }
+}
+verificarSinal(nnumero)
+
+//atividade 12
+let temperatura = prompt("Digite a temperatura em Celsius:");
+function converterTemperatura(temperatura){
+    console.log("A temperatura em Fahrenheit é " + ((temperatura * 1.8) + 32));
+}
+converterTemperatura(temperatura)
+*/
+// atividade 13
+let somatorio = 1;
+while(somatorio <= 100){
+    console.log(somatorio)
+    somatorio++; 
+}
