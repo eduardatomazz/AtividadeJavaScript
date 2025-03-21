@@ -187,7 +187,7 @@ function contarVogais(){
     letras = palavraa.split('');
     let nnv = 0
     for (let i=0;i<=palavraa.length;i++){
-        if ((letras[i] == 'a') || (letras[i] == 'e') || (letras[i] == 'i') || (letras[i] == 'o') || (letras[i] == 'u')){
+        if ((letras[i] == 'a') || (letras[i] == 'e') || (letras[i] == 'i') || (letras[i] == 'o') || (letras[i] == 'u') || (letras[i] == 'A') || (letras[i] == 'E') || (letras[i] == 'I') || (letras[i] == 'O') || (letras[i] == 'U')){
         nnv++;
         }  
         } 
