@@ -1,4 +1,4 @@
-/*
+
 //atividade 1
 let numero = 1
 function calculo(numero){
@@ -115,10 +115,121 @@ function converterTemperatura(temperatura){
     console.log("A temperatura em Fahrenheit é " + ((temperatura * 1.8) + 32));
 }
 converterTemperatura(temperatura)
-*/
+
 // atividade 13
-let somatorio = 1;
-while(somatorio <= 100){
-    console.log(somatorio)
-    somatorio++; 
+let somatorio = 0;
+let x = 1;
+while (x <= 100) {
+    somatorio = somatorio + x;
+    x = x + 1;
 }
+console.log("A soma dos números  é  " + somatorio)
+
+
+// atividade 14
+let azul = prompt("Digite:")
+function substituirPalavra(azul){
+    if (azul === "azul"){
+        console.log("vermelho")
+    }else {
+        console.log(azul)
+    }
+}
+substituirPalavra(azul)
+
+// atividade 15
+let tamanho = prompt("Digite a palavra:")
+function verificarTamanho(tamanho){
+    for (i=0;i<tamanho.length;i++);
+    if (tamanho.length > 10){
+        console.log("Tem mais de 10 caracteres!");
+    }else {
+        console.log("Tem menos de 10 caracteres!");
+    }
+}
+verificarTamanho(tamanho)
+
+// atividade 16
+let frutas = ["Maçã", "Banana", "Laranja", "Malencia", "Morango" ];
+console.log(frutas[2]);
+
+// atividade 17
+let nome = prompt("Digite seu nome:")
+function saudacao(nome){
+    console.log("Bem-vindo(a) " + nome)
+}
+saudacao(nome)
+
+// atividade 18
+let nota = prompt("Digite sua nota:")
+function verificarAprovacao(nota){
+    if (nota >= 6){
+        console.log("Aprovado")
+    } else {
+        console.log("Reprovado")
+    }
+}
+verificarAprovacao(nota)
+
+// atividade 19
+let pares = 1;
+while(pares <= 30){
+    pares++;
+    if (pares % 2 === 0){
+        console.log(pares);
+    } else {
+    }
+}
+
+// atividade 20
+function contarVogais(){
+    let palavraa = prompt("Digite uma palavra:");
+    letras = palavraa.split('');
+    let nnv = 0
+    for (let i=0;i<=palavraa.length;i++){
+        if ((letras[i] == 'a') || (letras[i] == 'e') || (letras[i] == 'i') || (letras[i] == 'o') || (letras[i] == 'u')){
+        nnv++;
+        }  
+        } 
+    console.log(nnv)
+}
+contarVogais()
+
+// atividade 21
+let array = [2, 5, 9, 6, 3];
+console.log(array[0] + array[1] + array[2] + array[3] + array[4])
+
+// atividade 22
+let n = prompt("Digite um número:")
+function dobrarNumeros(n){
+    console.log(parseInt(n) + parseInt(n))
+}
+dobrarNumeros(n)
+
+// atividade 23
+let paress = 2;
+while(paress <= 20){
+    paress++;
+    if (paress % 2 === 0){
+        console.log(paress);
+    } else {
+    }
+}
+
+// atividade 24
+let maiuscula = prompt("Digite a palavra:")
+function capitalizar(maiuscula){
+    console.log(maiuscula.charAt(0).toUpperCase() + maiuscula.slice(1));
+}
+capitalizar(maiuscula)
+
+// atividade 25
+let anoo = prompt("Digite um ano:")
+function anoBissexto(anoo){
+    if (anoo % 4 === 0){
+        console.log("É um ano bissexto")
+    }else {
+        console.log("Não é um ano bissexto")
+    }
+}
+anoBissexto(anoo)
